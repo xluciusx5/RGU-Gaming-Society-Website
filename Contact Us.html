@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<!--Contact Us Page developed by Lucian Petrus 2007281-->
+
+
+<html>
+<head>
+
+  <link rel="stylesheet" href="assets/css/contactus.css">
+  <title>RGU - Contact Us</title>
+  <meta charset="UTF-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #9376AC;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
+
+input[type=reset] {
+  background-color: #9376AC;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=reset]:hover {
+  background-color: #FF0000;
+  9376ac
+}
+</style>
+</head>
+
+
+
+
+<div class="padding">
+  <a class="padding" href="C:\Users\Andrei\Desktop\CMKyle\web-project" ></a>
+          <img id="images" src="assets/images/societylogo.png" alt="rgu gaming logo" height="150px" width="200px">
+  </a>
+
+  <button id="DarkModeButton" onclick="darkmode()">Toggle dark/light mode</button>
+
+  <script>
+      function darkmode() {
+          var element = document.body;
+          element.classList.toggle("dark-mode")
+      }
+  </script>
+  
+  <div class="navigation">
+      <ul>
+        <li class="nav"><a href="index.html">Home</a></li>
+        <li class="nav"><a href="Contact Us.html">Contact Us</a></li>
+        <li class="nav"><a href="Gallery Page.html">Gallery</a></li>
+        <li class="nav"><a href="calendar.html">Calendar</a></li>
+        <li class="nav"><a href="Current Members.html">Current Members</a></li>
+        <li class="nav"><a href="Upcoming Releases.html">Upcoming Releases</a></li>
+        <li class="nav"><a href="Hardware.html">Hardware</a></li>
+        <li class="nav"><a href="Review Page.html">Game Reviews</a></li>
+        <li class="nav"><a href="WhereWeAreBased.html">Where We Are Based</a></li>
+        <li class="nav"><a href="WYSJ.html">Why You Should Join</a></li>
+      </ul>
+  </div>
+<br><br><br><br><br><br>
+
+
+<centre>
+<section>
+  <div id="title">
+      <h1>Contact Us</h1>
+      <p>Feel free to always send us a message. We take questions, inquires and everything else in between!</p>
+      <h3>Contact form below ⬇️</h3>
+  </div>
+</section>
+</centre>
+<body>
+
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">📛First Name and Last Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name...">
+
+    <label for="lname">📛E-mail</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your e-mail...">
+
+    <label for="course">Course </label>
+    <select id="course" name="course">
+      <option value="accounting">🏦Accounting</option>
+      <option value="Advanced Architectural Design">🏛️Advanced Architectural Design</option>
+      <option value="Applied Bioscience">⚗️Applied Bioscience</option>
+      <option value="Business Management">💳Business Management</option>
+      <option value="Clinical Pharmacy Practice">💊Clinical Pharmacy Practice</option>
+      <option value="Computer Science">🖥️Computer Science</option>
+      <option value="Cyber Security and Network Management">🖥️Cyber Security and Network Management</option>
+      <option value="Data Science">🖥️Data Science</option>
+      <option value="Digital Media">🖥️Digital Media</option>
+      <option value="Drawing">🖍️Drawing</option>
+      <option value="Energy Management">⚡Energy Management</option>
+      <option value="Fashion & Textiles">👜Fashion & Textiles</option>
+      <option value="Financial Management">🏧Financial Management</option>
+      <option value="Human Resource Management">🧍Human Resource Management</option>
+      <option value="Information Tehnology">🖱️Information Tehnology</option>
+      <option value="International Marketing">™️International Marketing</option>
+      <option value="Journalism">📰Journalism</option>
+      <option value="Law">📒Law</option>
+      <option value="Management">🕴️Management</option>
+      <option value="Media">📱Media</option>
+      <option value="Networking">🌐Networking</option>
+      <option value="Oil and Gas Management">🛢️Oil and Gas Management</option>
+      <option value="Painting">🎨Painting</option>
+      <option value="Paramedic Practice">🚑Paramedic Practice</option>
+      <option value="Pharmacy">💉Pharmacy</option>
+      <option value="Photography">📸Photography</option>
+      <option value="Product Design">📐Product Design</option>
+      <option value="Quality Management">🛃Quality Management</option>
+      <option value="Radiographic Studies">😷Radiographic Studies</option>
+      <option value="Social Work">#️⃣Social Work</option>
+      <option value="australia">🏘️Three Dimensional Design</option>
+      <option value="Upholstery">💺Upholstery</option>
+      <option value="other">♾️other</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write your message here..." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit" onclick="alertFunctionForContactUsPage()">
+    
+         <script>
+function alertFunctionForContactUsPage() {
+    alert("Your question has been e-mailed to rguGamingSociety@rgu.ac.uk! Please note that given the current CODVID-19 pandemic, our response times may take a little longer. However, we plan on getting back to you within 2 days time.");
+}
+         </script>                      
+    
+    <input type="reset" value="Reset">
+     
+  </form>
+</div>
+
+
+
+<!-- Footer -->
+<footer>
+  <p>Connect with us our various social media accounts!</p>
+
+      <a href="https://en-gb.facebook.com/rgugaming">
+      <img src="assets/images/facebook-logo.png" alt="Facebook Logo" width=50 height=50>
+      </a>
+
+      <a href="https://rgugaming.tumblr.com/">
+      <img src="assets/images/tumblr-logo.jpg" alt="Tumblr Logo" width=50 height=50>
+      </a>
+
+      <a href="https://twitter.com/rgugaming?lang=en">
+      <img src="assets/images/twitter-logo.jpg" alt="Twitter logo" width=50 height=50>
+      </a>
+
+      <a href="https://www.youtube.com/user/RGUGaming">
+      <img src="assets/images/youtube-logo.png" alt="Facebook Logo" width=50 height=50>
+
+</footer>
+
+</body>
+</html>

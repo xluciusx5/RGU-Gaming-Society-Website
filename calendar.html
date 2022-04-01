@@ -1,0 +1,238 @@
+<!--Hector Hardy-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Calendar</title>
+    <link rel="stylesheet" href="assets/css/stylesheet.css">
+    <meta charset="UTF-8">
+</head>
+
+<body class="bodyStyle">
+    
+<header>
+    <div class="centerButton">
+    <button id="DarkModeButton" onclick="darkmode()">Toggle dark/light mode</button>
+    </div>
+    
+            <script>
+                    function darkmode() {
+                    var element = document.body;
+                    element.classList.toggle("dark-mode")
+                    }
+            </script>
+
+          <img style="margin-left: 40px;" src="assets/images/societylogo.png" alt="SoC logo" height="150px" width="200px">
+    
+<!-- Header -->
+    <div class="navigation">
+    <ul>
+      <li class="nav"><a href="index.html">Home</a></li>
+      <li class="nav"><a href="Contact Us.html">Contact Us</a></li>
+      <li class="nav"><a href="Gallery Page.html">Gallery</a></li>
+      <li class="nav"><a href="calendar.html">Calendar</a></li>
+      <li class="nav"><a href="Current Members.html">Current Members</a></li>
+      <li class="nav"><a href="Upcoming Releases.html">Upcoming Releases</a></li>
+      <li class="nav"><a href="Hardware.html">Hardware</a></li>
+      <li class="nav"><a href="Review Page.html">Game Reviews</a></li>
+      <li class="nav"><a href="WhereWeAreBased.html">Where We Are Based</a></li>
+      <li class="nav"><a href="WYSJ.html">Why You Should Join</a></li>
+    </ul>
+</div>
+</header> 
+       
+    
+<main>
+    
+    <br><br><br>
+    <div class="title">
+    <h1 class="hStyle"><u>Calendar</u></h1>
+    <p style="padding:5px;">Click on a date to see more information for that week.</p>
+    </div>
+    
+    <br><br>
+    
+    <h3 class="hStyle" style="text-align: center;" >December 2020</h3>
+    
+    <table>
+        
+        <tr class="tableHeader">
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+            <th>Sat</th>
+            <th>Sun</th>
+        </tr>
+        
+    <div class="tableStyle">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td onclick="week01()">1</td>
+        </tr>
+        
+        <tr>           
+            <td onclick="week01()" class="active">2</td>
+            <td onclick="week01()">3</td>
+            <td onclick="week01()">4</td>
+            <td onclick="week01()">5</td>
+            <td onclick="week01()">6</td>
+            <td onclick="week01()">7</td>
+            <td onclick="week02()">8</td>
+        </tr>
+        
+        <tr>           
+            <td onclick="week02()">9</td>
+            <td onclick="week02()">10</td>
+            <td onclick="week02()">11</td>
+            <td onclick="week02()">12</td>
+            <td onclick="week02()">13</td>
+            <td onclick="week02()">14</td>
+            <td onclick="week03()">15</td>
+        </tr>
+    
+        <tr>           
+            <td onclick="week03()">16</td>
+            <td onclick="week03()">17</td>
+            <td onclick="week03()">18</td>
+            <td onclick="week03()">19</td>
+            <td onclick="week03()">20</td>
+            <td onclick="week03()">21</td>
+            <td onclick="week04()">22</td>
+        </tr>
+        
+        <tr>           
+            <td onclick="week04()">23</td>
+            <td onclick="week04()">24</td>
+            <td onclick="week04()">25</td>
+            <td onclick="week04()">26</td>
+            <td onclick="week04()">27</td>
+            <td onclick="week04()">28</td>
+            <td onclick="week04()">29</td>
+        </tr>
+        
+        <tr>           
+            <td>30</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </div>
+        
+    </table>
+    
+    <script>
+        function week01() {
+            document.getElementById("week01").style.display = "block";
+            document.getElementById("week02").style.display = "none";
+            document.getElementById("week03").style.display = "none";
+            document.getElementById("week04").style.display = "none";
+        }
+        
+        function week02() {
+            document.getElementById("week01").style.display = "none";
+            document.getElementById("week02").style.display = "block";
+            document.getElementById("week03").style.display = "none";
+            document.getElementById("week04").style.display = "none";
+        }
+        
+        function week03() {
+            document.getElementById("week01").style.display = "none";
+            document.getElementById("week02").style.display = "none";
+            document.getElementById("week03").style.display = "block";
+            document.getElementById("week04").style.display = "none";
+        }
+        
+        function week04() {
+            document.getElementById("week01").style.display = "none";
+            document.getElementById("week02").style.display = "none";
+            document.getElementById("week03").style.display = "none";
+            document.getElementById("week04").style.display = "block";
+        }
+    </script>
+    
+    <div class="releases">
+    <p id="week01" style="position: relative; left: 5px;"><u>News and Events for Week 1</u><br><br>
+        <u>1st:</u><br>
+        - Twin Mirror Lost On Arrival.<br> 
+        - Worms Rumble <br>
+        <u>2nd:</u> <br>
+        - Fortnite Chapter 2 Season 5 <br>
+        - Sam & Max Save the World Remastered <br>
+        <u>3rd:</u> <br>
+        - Death Tales <br>
+        - El Hijo: A Wild West Tale <br>
+        <u>4th:</u> <br>
+        - FIFA 21 <br>
+    </p>
+    
+    <p id="week02" style="position: relative; left: 5px;"><u>News and Events for Week 2</u><br><br>
+        <u>8th:</u><br>
+        - Call of the Sea <br>
+        - Destiny 2 <br>
+        <u>10th:</u> <br>
+        - Animal Farm <br>
+        - Cyberpunk 2077 (preorder) <br>
+        <u>11th:</u> <br>
+        - Medal of Honor: Above and Beyond
+    </p>
+        
+    <p id="week03" style="position: relative; left: 5px;"><u>News and Events for Week 3</u><br><br>
+        <u>15th:</u><br>
+        - GTA Online: The Cayo Perico Heist <br>
+        - Collection of SaGa Final Fantasy Legend <br>
+        <u>16th:</u><br>
+        - MXGP 2020 <br>
+        <u>18th:</u><br>
+        - Theme Park Simulator (swtich)<br>
+    </p>
+        
+    <p id="week04" style="position: relative; left: 5px;"><u>News and Events for Week 4</u><br><br>
+        <u>22nd:</u><br>
+        - Override 2 Ultraman Deluxe Edition <br>
+        <u>31st:</u><br>
+        - Warhammer: Chaosbane - Slayer Edition <br>
+        - WRC 9 (switch) <br>
+    </p>
+    </div>
+    
+</main>
+ 
+    <br><br><br>
+    
+<footer>
+    
+    <p>Connect with us our various social media accounts!</p>
+
+        <a href="https://www.facebook.com/rgugaming/">
+        <img src="assets/images/facebook.png" alt="Facebook Logo" width=50 height=50 style="padding: 5px; border-radius: 0;">
+        </a>
+
+        <a href="https://rgugaming.tumblr.com/">
+        <img src="assets/images/tumblr.jpg" alt="Tumblr Logo" width=50 height=50 style="padding: 5px; border-radius: 0;">
+        </a>
+
+        <a href="https://twitter.com/rgugaming?lang=en">
+        <img src="assets/images/twitter.jpg" width=50 height=50 style="padding: 5px; border-radius: 0;">
+        </a>
+
+        <a href="https://www.youtube.com/user/RGUGaming">
+        <img src="assets/images/youtube.png" alt="Facebook Logo" width=50 height=50 style="padding: 5px; border-radius: 0;">
+        </a>
+
+</footer>
+       
+</body>
+    
+</html>
+
